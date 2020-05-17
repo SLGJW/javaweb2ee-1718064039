@@ -8,7 +8,7 @@
 </head>
 <body align="center" bgcolor="#EBEBEB">
 <h1>学生信息封装</h1>
-<jsp:useBean id="loginBean" class="javabean.loginBean"/>
+<jsp:useBean id="loginBean" class="cxy5.loginBean"/>
 <jsp:setProperty property="number" name="loginBean" param="user_number"/>
 <jsp:setProperty property="name" name="loginBean" param="user_name"/>
 <jsp:setProperty property="ssex" name="loginBean" param="user_ssex"/>
