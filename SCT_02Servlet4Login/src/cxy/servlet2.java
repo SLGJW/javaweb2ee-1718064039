@@ -40,15 +40,15 @@ public class servlet2 extends HttpServlet {
 	            String name = ck[0].getValue();
 	            String password = ck1[0].getValue();
 	            if (!name.equals("") || password.equals("")) {
-	                out.println("<h1 align=\"center\">µÇÂ¼±£»¤Ò³Ãæ</h1>");
-	                out.println("<p align=\"center\">»¶Ó­caixingyou·ÃÎÊ±¾ÏµÍ³</p>");
+	                out.println("<h1 align=\"center\">ç™»å½•ä¿æŠ¤é¡µé¢</h1>");
+	                out.println("<p align=\"center\">æ¬¢è¿caixingyouè®¿é—®æœ¬ç³»ç»Ÿ</p>");
 	                out.println("<div align=\"center\">");
-	                out.println("<a href=\"Servlet3\">×¢Ïú</a>");
+	                out.println("<a href=\"Servlet3\">æ³¨é”€</a>");
 	                out.println("</div>");
 	            }
 	        } else {
 	    		out.println("<div align=\"center\">");
-				out.println("<h1>µÇÂ¼ÒÑÊ§Ğ§,ÇëÖØĞÂ<a href=\"index1.html\">µÇÂ¼</a></h1>");
+				out.println("<h1>ç™»å½•å·²å¤±æ•ˆ,è¯·é‡æ–°<a href=\"index1.html\">ç™»å½•</a></h1>");
 				out.println("</div>");
 	        }
 	        out.close();
