@@ -30,8 +30,8 @@ public class myservlet extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
         response.setCharacterEncoding("utf-8");
         PrintWriter out = response.getWriter();
-        String title = "±íµ¥Ìá½»µÄĞÅÏ¢";
-        String cxy="Ñ§ÉúĞÅÏ¢Â¼Èë";
+        String title = "è¡¨å•æäº¤çš„ä¿¡æ¯";
+        String cxy="å­¦ç”Ÿä¿¡æ¯å½•å…¥";
         String docType = "<!DOCTYPE html> \n";
         out.println(docType +
             "<html>\n" +
@@ -39,20 +39,20 @@ public class myservlet extends HttpServlet {
             "<body>\n" +
             "<h1 align=\"center\">" + title + "</h1>\n" +
             "<ul>\n" +
-            "  <li><b>Ñ§ºÅ</b>:"
+            "  <li><b>å­¦å·</b>:"
             +request.getParameter("name")+ "\n" +
-            "  <li><b>ĞÕÃû</b>:"
+            "  <li><b>å§“å</b>:"
             + request.getParameter("url")+ "\n" +
-             "<li><b>ÉúÈÕ</b>:"
+             "<li><b>ç”Ÿæ—¥</b>:"
             +request.getParameter("bday")+"\n"  );
    	    String[] values = request.getParameterValues("man") ;
 	    if(values!=null&&values.length>0) {
 	        for(int i= 0 ;i<values.length;i++)
-	        	out.println("<li><b>"+"ĞÔ±ğ :"+values[i]+"</b>")       ;  
+	        	out.println("<li><b>"+"æ€§åˆ« :"+values[i]+"</b>")       ;  
 	   }
 	    String[] values1 = request.getParameterValues("sp") ;
 	    if(values1!=null&&values1.length>0) {
-	    	out.println("<li><b>"+"ÌåÓı°®ºÃ:"+"</b>");
+	    	out.println("<li><b>"+"ä½“è‚²çˆ±å¥½:"+"</b>");
 	        for(int k= 0 ;k<values1.length;k++)
 	            out.println("<b>"+values1[k]+"</b>");
 	    }

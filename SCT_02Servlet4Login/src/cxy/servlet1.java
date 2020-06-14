@@ -35,7 +35,8 @@ public class servlet1 extends HttpServlet {
 			response.setContentType("text/html;charset=utf-8");
 			String account=request.getParameter("account");
 			String password=request.getParameter("password");
-			if(account.equals("caixingyou") && password.equals("1718064039")) {
+			if("caixingyou".equals(account)&&"1718064039".equals(password))
+			{
 				 Cookie ck = new Cookie("account", account);
 				 Cookie ck1=new Cookie("password",password);
 				 ck.setMaxAge(60*60*24);
